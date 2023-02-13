@@ -1,0 +1,37 @@
+* {
+    margin: 1%;
+    /* width: 98%; */
+    word-wrap: break-word;
+}
+
+.login-page {
+    margin-top: 27%;
+    /* margin-bottom: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.generate-token,
+.authentiacation {
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.generate-token button,
+input {
+    width: 98%;
+
+}
+
+.generate-token input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    /* border-bottom-style: groove; */
+    outline: none;
+}

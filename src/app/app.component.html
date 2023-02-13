@@ -10,6 +10,50 @@
        " />
 </svg> -->
 
-<div>
+<!-- <div>
   From app Component <i class="bi bi-airplane"></i>
+</div> -->
+<!-- <div>
+  securityKey:<input type="text">
+  ipaddress: <input type="text">
+</div> -->
+<div class="login-page">
+  <!-- <form class="authentiacation" [formGroup]="authTokenForm" (ngSubmit)="authenticate()">
+
+    <h3>Yokoso APIs</h3>
+  
+    <input matInput placeholder="enter secretkey" formControlName="secretKey" />
+  
+    <input matInput placeholder="enter ipAddress" formControlName="ipAddress" />
+  
+    <button class="btn btn-primary" [disabled]="!authTokenForm.valid" mat-raised-button type="submit">
+      Authenticate
+    </button> <br>
+    <div>
+      response: {{response}}
+    </div>
+  </form> -->
+  
+  <form class="generate-token" [formGroup]="generateTokenForm" (ngSubmit)="generateToken()">
+    <h3>--Login--</h3>
+    <!-- Email: -->
+    <input matInput placeholder="enter email" formControlName="email" />
+  
+    <!-- Password:  -->
+    <input matInput placeholder="enter password" formControlName="password" />
+  
+    <button class="btn btn-primary" [disabled]="!generateTokenForm.valid" mat-raised-button type="submit">
+      Generate Token
+    </button><br>
+    <div class="col-md-12">
+      {{token}}
+    </div>
+    <!-- <button mat-raised-button type="submit">
+      Add User
+    </button> -->
+  </form>
+  
+  <!-- <button class="btn btn-success" (click)="getCountries()">getCountries</button>
+  <button class="btn btn-success" (click)="getContryUsers()">getContryUsers</button> -->
 </div>
+
